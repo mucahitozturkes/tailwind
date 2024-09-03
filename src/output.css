@@ -588,6 +588,22 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -604,10 +620,6 @@ video {
   width: 100%;
 }
 
-.max-w-56 {
-  max-width: 14rem;
-}
-
 .max-w-72 {
   max-width: 18rem;
 }
@@ -618,6 +630,10 @@ video {
 
 .place-content-center {
   place-content: center;
+}
+
+.place-content-end {
+  place-content: end;
 }
 
 .items-center {
@@ -645,9 +661,29 @@ video {
   background-color: rgb(14 116 144 / var(--tw-bg-opacity));
 }
 
-.bg-orange-200 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.fill-blue-700 {
+  fill: #1d4ed8;
+}
+
+.fill-green-700 {
+  fill: #15803d;
+}
+
+.fill-red-700 {
+  fill: #b91c1c;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-yellow-700 {
+  fill: #a16207;
 }
 
 .p-4 {
@@ -659,14 +695,29 @@ video {
   line-height: 1.75rem;
 }
 
-.text-gray-700 {
+.text-blue-700 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.text-green-700 {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-700 {
+  --tw-text-opacity: 1;
+  color: rgb(161 98 7 / var(--tw-text-opacity));
 }
 
 .transition-colors {
@@ -675,17 +726,43 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.dn {
+  width: 80px;
+  transition: .7s ease-in-out;
+  #sidebar-wrapper {
+    display: grid;
+    gap: 3.5rem;
+  }
+  #index-border {
+    border: unset;
+    place-content: end;
+    padding: .5rem;
+    width: unset;
+  }
+  #add-item-button {
+    display: none;
+  }
 }
 
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-black:hover {
+  fill: #000;
 }
 
 .group:hover .group-hover\:fill-blue-700 {

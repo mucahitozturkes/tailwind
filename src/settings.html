@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="">
+        <div id="container" class="">
+
+            <nav>
+
+            </nav>
+
+
+            <div id="sidebar" class="dn max-w-72 h-svh grid place-content-center bg-cyan-700 relative">
+                <div id="open-menu" class="cursor-pointer flex place-content-end absolute right-5 top-5"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                    fill="#FFFFFF" class="hover:fill-black duration-300 ease-in-out">
+                    <path
+                        d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z" />
+                </svg></div>
+                <div id="sidebar-wrapper" class="grid gap-9">
+                    <a href="index.html">
+                        <div
+                        id="index-border"  class="cursor-pointer border w-full flex gap-3 p-4 items-center hover:bg-white duration-300 rounded-lg group">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                                fill="#FFFFFF" class="fill-white group-hover:fill-green-700">
+                                <path
+                                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h360v80H200v560h560v-360h80v360q0 33-23.5 56.5T760-120H200Zm120-160v-80h320v80H320Zm0-120v-80h320v80H320Zm0-120v-80h320v80H320Zm360-80v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z" />
+                            </svg>
+                            <div id="add-item-button"  class="text-xl text-white group-hover:text-green-700">
+                                Add New Item</div>
+                    
+                </div></a>
+
+                <a href="product.html">
+                    <div
+                    id="index-border"  class="cursor-pointer border w-full flex gap-3 p-4 items-center hover:bg-white duration-300 rounded-lg group">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                            fill="#FFFFFF" class="group-hover:fill-blue-700 transition-colors duration-300">
+                            <path
+                                d="m240-522-40 22q-14 8-30 4t-24-18L66-654q-8-14-4-30t18-24l230-132h70q9 0 14.5 5.5T400-820v20q0 33 23.5 56.5T480-720q33 0 56.5-23.5T560-800v-20q0-9 5.5-14.5T580-840h70l230 132q14 8 18 24t-4 30l-80 140q-8 14-23.5 17.5T760-501l-40-20v361q0 17-11.5 28.5T680-120H280q-17 0-28.5-11.5T240-160v-362Zm80-134v456h320v-456l124 68 42-70-172-100q-15 51-56.5 84.5T480-640q-56 0-97.5-33.5T326-758L154-658l42 70 124-68Zm160 177Z" />
+                        </svg>
+                        <div id="add-item-button"  class="text-white text-xl group-hover:text-blue-700 transition-colors duration-300">
+                            Products</div>
+                    </div>
+                </a>
+
+                <a href="delete.html">
+                    <div
+                    id="index-border"  class="cursor-pointer border w-full flex gap-3 p-4 items-center hover:bg-white duration-300 rounded-lg group">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                            fill="#FFFFFF" class="group-hover:fill-red-700 transition-colors duration-300">
+                            <path
+                                d="M600-240v-80h160v80H600Zm0-320v-80h280v80H600Zm0 160v-80h240v80H600ZM120-640H80v-80h160v-60h160v60h160v80h-40v360q0 33-23.5 56.5T440-200H200q-33 0-56.5-23.5T120-280v-360Zm80 0v360h240v-360H200Zm0 0v360-360Z" />
+                        </svg>
+                        <div id="add-item-button"  class="text-white text-xl group-hover:text-red-700 transition-colors duration-300">Delete
+                        </div>
+                    </div>
+                </a>
+
+                <a href="settings.html">
+                <div id="index-border"  class="cursor-pointer border w-full flex gap-3 p-4 items-center bg-white duration-300 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                        fill="#FFFFFF" class="fill-yellow-700 transition-colors duration-300">
+                        <path
+                            d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                    </svg>
+                    <div id="add-item-button"  class="text-xl text-yellow-700 transition-colors duration-300">
+                        Settings</div>
+                </div></a>
+
+            </div>
+
+        </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
